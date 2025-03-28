@@ -83,7 +83,10 @@ const backendDomain = process.env.REACT_APP_BACKEND_URL;
     getOrder : {
         url : `${backendDomain}/api/order-list`,
         method : 'get'
+    },
+    allOrder : {
+        url : `${backendDomain}/api/all-order`,
+        method : 'get'
     }
 };
-
 export default summaryApi
