@@ -3,7 +3,7 @@ export const uploadImage = async(image) => {
     formData.append("file", image);
     formData.append("upload_preset", "Second-Time");
     const cloudName= process.env.REACT_APP_CLOUD_NAME_CLOUDINARY;
-    const url = `http://api.cloudinary.com/v1_1/${cloudName}/image/upload`;
+    const url = `https://api.cloudinary.com/v1_1/${cloudName}/image/upload`;
   
     const response = await fetch(url, {
       method: "POST",
